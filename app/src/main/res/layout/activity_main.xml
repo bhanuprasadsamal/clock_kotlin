@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- EditText fields for entering hour and minute -->
+    <EditText
+        android:id="@+id/etHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Hour"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Minute"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Button to set the time -->
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Button to set the alarm -->
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"/>
+
+    <!-- TextView to display the current time (digital clock) -->
+    <TextView
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:text="Current Time: "
+        android:textStyle="bold"/>
+
+</LinearLayout>
